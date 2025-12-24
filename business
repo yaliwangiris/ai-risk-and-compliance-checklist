@@ -1,1 +1,101 @@
-business
+# Business-Focused AI Risk & Decision Review
+
+This section translates AI risk and governance principles into **business and product decision language**.
+
+It is designed for situations where AI systems support **commercial decisions** such as targeting, prioritization, pricing support, or operational optimization.
+
+---
+
+## Business Objective First
+
+AI should be evaluated based on the **decision it informs**, not the sophistication of the model.
+
+Before any technical discussion, the following questions must be answered:
+
+- What business decision will the AI system support?
+- Who owns that decision?
+- What is the cost of a wrong decision?
+- What is the non-AI baseline today?
+
+If these questions cannot be answered clearly, AI deployment should be reconsidered.
+
+---
+
+## Decision Mapping
+
+A clear distinction must be made between:
+- **AI output** (scores, rankings, predictions)
+- **Business decision** (actions taken based on those outputs)
+
+AI outputs should be treated as **decision inputs**, not automatic instructions.
+
+Key checks:
+- Is the AI advisory or automated?
+- Can humans override the output?
+- Are override decisions documented?
+
+---
+
+## Risk Review (Business Perspective)
+
+### Financial Risk
+- What is the expected cost of false positives?
+- What is the cost of false negatives?
+- Are thresholds conservative by default?
+
+### Customer / User Risk
+- Will users perceive the AI’s involvement?
+- Could this affect trust, fairness, or experience?
+- Is there a human appeal or review path?
+
+---
+
+## Model Use and Limits
+
+From a business perspective, it must be explicitly documented that:
+
+- Predictive models estimate likelihood, not intent
+- Prediction does not imply causation
+- Model outputs degrade over time as behavior changes
+
+What the model **cannot** support should be stated as clearly as what it can.
+
+---
+
+## Go / No-Go Business Decision
+
+AI deployment should require an explicit business decision, supported by:
+
+- A named business owner
+- A defined success metric (KPI)
+- Clear risk tolerance
+- A rollback or pause mechanism
+
+Possible outcomes:
+- Go
+- Go with constraints
+- No-Go
+
+Each outcome must be justified in writing.
+
+---
+
+## Post-Deployment Review
+
+After launch, the business must review:
+- Whether KPIs improved as expected
+- Whether decision behavior changed unintentionally
+- Whether teams over-relied on AI outputs
+
+If AI increases operational complexity without measurable benefit, continued use should be questioned.
+
+---
+
+## How This Section Is Used
+
+This framework can be used as:
+- A pre-launch decision review
+- A PM / analytics alignment document
+- An appendix to an executive decision memo
+- A governance artifact for internal review
+
